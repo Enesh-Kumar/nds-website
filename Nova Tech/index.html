@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NDS - New Diet System</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- FontAwesome for icons -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="container">
+      <h1>NDS</h1>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <div class="links" id="nav-links">
+        <button onclick="showPage('home')">Home</button>
+        <button onclick="showPage('about')">About Us</button>
+        <button onclick="showPage('founder')">Founder</button>
+        <button onclick="showPage('gallery')">Gallery</button>
+        <button onclick="showPage('videos')">Videos</button>
+        <button onclick="showPage('contact')">Contact</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Pages -->
+  <main>
+    <section id="home" class="page active">
+      <img src="banner.png" alt="NDS Banner">
+      <h2>Welcome to New Diet System</h2>
+      <p>Transform your health with science-backed nutrition and personalized diet plans.</p>
+    </section>
+
+    <section id="about" class="page">
+  <h2>About Us</h2>
+  <p>NDS (New Diet System) is a revolutionary approach...</p>
+  
+  <!-- Screenshots -->
+  <div class="about-screens">
+    <img src="screenshots/nds-info1.jpg" alt="NDS Info 1">
+    <img src="screenshots/nds-info2.jpg" alt="NDS Info 2">
+  </div>
+</section>
+
+  <section id="founder" class="page">
+  <h2>Founder</h2>
+  <img src="founder.jpg" alt="Founder">
+  <p>Our founder, Dr. John Doe, has dedicated his life to promoting better health...</p>
+  
+  <!-- Add screenshot(s) -->
+  <div class="founder-info">
+    <img src="screenshots/owner-info1.jpg" alt="Owner Info 1">
+    <img src="screenshots/owner-info2.jpg" alt="Owner Info 2">
+  </div>
+</section>
+
+    <section id="gallery" class="page">
+      <h2>Photo Gallery</h2>
+      <div class="grid">
+        <img src="students/1.jpg" alt="Student 1">
+        <img src="students/2.jpg" alt="Student 2">
+        <img src="students/3.jpg" alt="Student 3">
+        <img src="students/4.jpg" alt="Student 4">
+        <img src="students/5.jpg" alt="Student 5">
+        <img src="students/6.jpg" alt="Student 6">
+      </div>
+    </section>
+
+    <section id="videos" class="page">
+      <h2>Video Gallery</h2>
+      <div class="grid video-grid">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section id="contact" class="page">
+      <h2>Contact & Address</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Message" rows="4" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <p>Email: info@nds.com | Phone: +123 456 789</p>
+      <p>Address: 123 Health St, Wellness City</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <p>© 2025 NDS - All Rights Reserved</p>
+      <div class="links">
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/123456789" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:info@nds.com"><i class="fas fa-envelope"></i></a>
+        <a href="tel:+123456789"><i class="fas fa-phone"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button id="scrollTopBtn" onclick="scrollToTop()">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
